@@ -10,5 +10,5 @@
   "jsxSingleQuote": true,
   "jsxBracketSameLine": false,
   "semi": true,
-  "printWidth": 150,
+  "printWidth": 150
 }

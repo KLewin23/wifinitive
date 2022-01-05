@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #242424;
+    padding: 35px 1% 100px 1%;
+    color: white;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.section2 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.section2 > div > a > h4 {
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s linear;
+}
+
+.section2 > div > a > h4:hover {
+    border-bottom: 1px solid currentColor;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer {
+        padding: 35px 10% 100px 10%;
+    }
+}
