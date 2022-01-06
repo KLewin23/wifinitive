@@ -1,0 +1,29 @@
+/* navbar */
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    padding: 0 1%;
+    color: white;
+    z-index: 100;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        padding: 0 10%;
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.links > a {
+    margin-right: 30px;
+}
