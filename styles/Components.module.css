@@ -25,5 +25,11 @@
 }
 
 .links > a {
+    border-bottom: 1px solid transparent;
     margin-right: 30px;
+    transition: border-bottom-color .4s ease-in-out;
+}
+
+.links > a:hover {
+    border-bottom: 1px solid white;
 }
