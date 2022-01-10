@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
-    const [hoveredTile, setHoveredTile] = useState<null | number>(0);
+    const [hoveredTile, setHoveredTile] = useState<null | number>(null);
     const quarterTiles = useRef<HTMLDivElement | null>(null);
 
     return (
