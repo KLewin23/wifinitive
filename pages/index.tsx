@@ -82,6 +82,24 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.cloudServices}>
+                    <div className={styles.csBarWrapper}>
+                        <div className={styles.csColourBar1} />
+                        <div className={styles.csColourBar2} />
+                    </div>
+                    <div className={styles.csTextWrapper}>
+                        <h3>Cloud Services</h3>
+                        <h6>
+                            Utilize our unlimited cloud storage options for your services and applications- keeping you ahead of the competition and
+                            keeping your business on track for success.
+                        </h6>
+                        <h6 style={{ marginTop: '20%' }}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed odio viverra adipiscing.Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Faucibus sed odio viverra adipiscing.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus sed odio viverra adipiscing.
+                        </h6>
+                    </div>
+                </div>
             </main>
             <Footer />
         </>

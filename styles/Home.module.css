@@ -97,6 +97,50 @@
     flex-direction: column;
 }
 
+.cloudServices {
+    position: relative;
+    z-index: 40;
+    color: white;
+    background-color: #242424;
+    border-bottom: solid 1px white;
+}
+
+.csBarWrapper {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    z-index: 30;
+}
+
+.csColourBar1 {
+    position: absolute;
+    z-index: 20;
+    height: 500px;
+    width: 120%;
+    right: -10%;
+    bottom: 0;
+    background: linear-gradient(90deg, #46a9bf 1.8%, #2de07f 94.76%);
+    transform: rotate(4.7deg); /* -85 */
+}
+
+.csColourBar2 {
+    position: absolute;
+    z-index: 10;
+    height: 500px;
+    width: 120%;
+    left: -10%;
+    bottom: 0;
+    background: linear-gradient(90deg, #2de07f -7.72%, #46a9bf 62.81%);
+    transform: rotate(-2.03deg); /* -91.73 */
+}
+
+.csTextWrapper {
+    position: relative;
+    z-index: 40;
+    padding: 5em 5%;
+    max-width: 36rem;
+}
+
 @media only screen and (min-width: 850px) {
     .quarterTiles {
         grid-template-columns: 1fr 1fr;
@@ -106,5 +150,8 @@
     .statsContainer {
         padding: 7rem 10%;
         grid-template-columns: 1fr 1fr;
+    }
+    .csTextWrapper {
+        padding: 7rem 0 7em 10%;
     }
 }
