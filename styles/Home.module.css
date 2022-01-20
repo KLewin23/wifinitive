@@ -12,7 +12,9 @@
 .tile {
     position: relative;
     width: 40ch;
-    margin: 0 auto;
+}
+
+.tile > :first-child {
     cursor: pointer;
 }
 
@@ -21,23 +23,23 @@
     z-index: 50;
 }
 
-.tile > p {
+.tile p {
     font-size: 1.25rem;
     max-width: 325px;
 }
 
-.tile > a {
+.tile a {
     font-family: Montserrat, sans-serif;
     font-size: 0.9375rem;
     border-bottom: solid 1px transparent;
     transition: all 0.4s ease-in-out;
 }
 
-.tile > a:hover {
+.tile a:hover {
     border-bottom: solid 1px white;
 }
 
-.tile > div {
+.tile :is(.slide1, .slide2, .slide3, .slide4) {
     position: absolute;
     z-index: 10;
     transition: all 0.5s ease-in-out;
@@ -146,6 +148,9 @@
         grid-template-columns: 1fr 1fr;
         padding: 7rem 12%;
         grid-row-gap: 22vh;
+    }
+    .tile {
+        margin: 0 auto;
     }
     .statsContainer {
         padding: 7rem 10%;

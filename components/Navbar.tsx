@@ -33,10 +33,10 @@ const Navbar = ({ mode }: { mode: 'light' | 'dark' }): JSX.Element => {
                     </a>
                 </div>
             ) : (
-                <div>
-                    <span />
-                    <span />
-                    <span />
+                <div className={styles.navIcon}>
+                    <div />
+                    <div />
+                    <div />
                 </div>
             )}
         </div>
