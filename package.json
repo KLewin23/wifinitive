@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "snyk": "snyk test"
+    "snyk": "snyk test",
+    "test": "snyk test"
   },
   "dependencies": {
     "@fontsource/montserrat": "^4.5.1",
@@ -32,6 +33,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "prettier": "^2.5.1",
+    "snyk": "^1.833.0",
     "typescript": "4.5.4"
   }
 }

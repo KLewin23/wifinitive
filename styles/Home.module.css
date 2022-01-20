@@ -1,24 +1,16 @@
 .quarterTiles {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40ch, 50%));
+    grid-template-columns: 1fr;
     background-color: #242424;
+    overflow: hidden;
     padding: 5vh 5%;
     color: white;
-    row-gap: 10vh;
-}
-
-@media only screen and (min-width: 850px) {
-    .quarterTiles {
-        padding: 7rem 12%;
-        row-gap: 22vh;
-    }
+    grid-row-gap: 10vh;
 }
 
 .tile {
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: 40ch;
     margin: 0 auto;
     cursor: pointer;
@@ -30,14 +22,13 @@
 }
 
 .tile > p {
-    font-size: 20px;
+    font-size: 1.25rem;
     max-width: 325px;
 }
 
 .tile > a {
     font-family: Montserrat, sans-serif;
-    font-size: 15px;
-    width: fit-content;
+    font-size: 0.9375rem;
     border-bottom: solid 1px transparent;
     transition: all 0.4s ease-in-out;
 }
@@ -86,9 +77,34 @@
     transition: all 0.6s ease-in-out;
 }
 
-.stats {
+.statsContainer {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    padding: 3rem 5%;
     z-index: 50;
-    height: 500px;
     background-color: white;
+}
+.stats {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stats > div {
+    display: grid;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 850px) {
+    .quarterTiles {
+        grid-template-columns: 1fr 1fr;
+        padding: 7rem 12%;
+        grid-row-gap: 22vh;
+    }
+    .statsContainer {
+        padding: 7rem 10%;
+        grid-template-columns: 1fr 1fr;
+    }
 }

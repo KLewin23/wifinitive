@@ -17,19 +17,19 @@ const Navbar = ({ mode }: { mode: 'light' | 'dark' }): JSX.Element => {
             {windowWidth > 850 ? (
                 <div className={styles.links}>
                     <a href={'/'}>
-                        <h4>Home</h4>
+                        <h5>Home</h5>
                     </a>
                     <a href={'/products'}>
-                        <h4>Products</h4>
+                        <h5>Products</h5>
                     </a>
                     <a href={'/services'}>
-                        <h4>Services</h4>
+                        <h5>Services</h5>
                     </a>
                     <a href={'/contact'}>
-                        <h4>Contact</h4>
+                        <h5>Contact</h5>
                     </a>
                     <a href={'/about'}>
-                        <h4>About</h4>
+                        <h5>About</h5>
                     </a>
                 </div>
             ) : (

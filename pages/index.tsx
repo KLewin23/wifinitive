@@ -47,7 +47,41 @@ const Home: NextPage = () => {
                         <div className={styles.slide4} style={{ transform: hoveredTile === 3 ? 'rotate(-36deg) scaleX(3.3)' : 'rotate(-36deg)' }} />
                     </div>
                 </div>
-                <div className={styles.stats}>stats</div>
+                <div className={styles.statsContainer}>
+                    <div style={{ maxWidth: '450px' }}>
+                        <h4 style={{ fontWeight: 'normal', marginBottom: '2rem' }}>
+                            We&apos;re built around the goal of reducing costs, maximizing support, and easing the path for groundbreaking IT
+                            software.
+                        </h4>
+                        <h5>
+                            We work with our clients to bring forward-thinking solutions to their modern dilemmas and optimize their unique results.
+                        </h5>
+                    </div>
+                    <div className={styles.stats}>
+                        <div>
+                            <h3>&gt;200k</h3>
+                            <h6>
+                                Deliverable data <br /> centre space&nbsp;(sq&nbsp;ft)
+                            </h6>
+                        </div>
+                        <div>
+                            <h3>3</h3>
+                            <h6>
+                                UK Regional cloud
+                                <br />
+                                deployments
+                            </h6>
+                        </div>
+                        <div>
+                            <h3>8</h3>
+                            <h6>Industries served</h6>
+                        </div>
+                        <div>
+                            <h3>Global</h3>
+                            <h6>Support and partner structure</h6>
+                        </div>
+                    </div>
+                </div>
             </main>
             <Footer />
         </>
