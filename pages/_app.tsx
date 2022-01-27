@@ -1,5 +1,6 @@
 import React from 'react';
 import '@fontsource/montserrat';
+import '@fontsource/montserrat/700.css';
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 

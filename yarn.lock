@@ -71,8 +71,8 @@
     strip-json-comments "^3.1.1"
 
 "@fontsource/montserrat@^4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.1.tgz#64a33ffdb77bbc63484c0321710bed272cc5b16f"
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.3.tgz#30e8943df4f9904b7379a27304073837193b53b3"
 
 "@hapi/accept@5.0.2":
   version "5.0.2"

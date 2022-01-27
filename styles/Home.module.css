@@ -48,14 +48,14 @@
 
 .tile :is(.slide1, .slide2) {
     top: calc(-8rem - 100%);
-    left: 60%;
+    left: 45%;
     width: 500px;
     min-height: 300px;
     height: calc(140% + 40px);
 }
 
 .tile :is(.slide3, .slide4) {
-    left: -125%;
+    left: -100%;
     bottom: calc(-8rem - 100%);
     width: 500px;
     min-height: 300px;
@@ -150,8 +150,8 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 5%;
-    width: 90%;
-    min-width: 450px;
+    width: 100%;
+    min-width: 100px;
     z-index: 100;
 }
 
@@ -191,7 +191,7 @@
 
 .infoBlocks {
     display: grid;
-    margin: 4em auto;
+    margin: 6em auto;
     grid-template-columns: 1fr;
     width: 90%;
     gap: 2em;
@@ -215,6 +215,61 @@
     font-weight: bold;
 }
 
+.section5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5em;
+    padding: 2rem 5%;
+    color: white;
+    background-color: #242424;
+}
+
+.section5 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.products > div {
+    display: grid;
+    text-align: center;
+    margin-block: 3em;
+    grid-template-columns: 1fr;
+    gap: 3em;
+}
+
+.products > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+@media only screen and (min-width: 1100px) {
+    .products {
+        display: block;
+        margin-top: -2em;
+    }
+    .products > div {
+        gap: 1em;
+        grid-template-columns: 30ch 30ch 30ch;
+        text-align: initial;
+    }
+    .products > div > div {
+        align-items: start;
+    }
+}
 @media only screen and (min-width: 850px) {
     .quarterTiles {
         grid-template-columns: 1fr 1fr;
@@ -223,7 +278,7 @@
     }
     .tile {
         margin: 0 auto;
-        max-width: 40ch;
+        max-width: 50ch;
     }
     .statsContainer {
         padding: 7rem 10%;
@@ -236,7 +291,7 @@
         grid-template-columns: 1fr 1fr;
         margin: -30px auto 0 auto;
         padding: 0;
-        width: 50%;
+        width: 80%; /* 60% */
         min-width: 800px;
     }
     .implementingSaas {
@@ -248,7 +303,7 @@
     }
     .infoBlocks {
         grid-template-columns: 1fr 1fr;
-        width: 50%;
+        width: 80%; /* 60% */
     }
     .infoBlocks > :last-child {
         justify-self: end;
@@ -256,5 +311,10 @@
     }
     .infoBlocks > :last-child > a {
         align-self: end;
+    }
+    .section5 {
+        padding: 5em 10%;
+        grid-gap: 20em;
+        grid-template-columns: 1fr 1fr;
     }
 }

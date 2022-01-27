@@ -7,10 +7,13 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import DecahedraCloud from '../public/DecahedraCloud.svg';
 import ImplementingSaas from '../public/ImplementingSaas.svg';
+import PinkBars from '../public/pinkBars.svg';
+import useWindowWidth from '../components/useWindowWidth';
 
 const Home: NextPage = () => {
     const [hoveredTile, setHoveredTile] = useState<null | number>(null);
     const quarterTiles = useRef<HTMLDivElement | null>(null);
+    const windowWidth = useWindowWidth();
 
     return (
         <>
@@ -119,7 +122,7 @@ const Home: NextPage = () => {
                         </h6>
                     </div>
                 </div>
-                <div className={styles.section4}>
+                <div>
                     <div className={styles.splitCard}>
                         <div className={styles.implementingSaas}>
                             <div>
@@ -129,7 +132,7 @@ const Home: NextPage = () => {
                                     Learn more
                                 </a>
                             </div>
-                            <Image src={ImplementingSaas} />
+                            {windowWidth > 350 ? <Image src={ImplementingSaas} /> : null}
                         </div>
                         <div className={styles.decahedraCloud}>
                             <div>
@@ -139,7 +142,7 @@ const Home: NextPage = () => {
                                     Learn more
                                 </a>
                             </div>
-                            <Image src={DecahedraCloud} />
+                            {windowWidth > 350 ? <Image src={DecahedraCloud} /> : null}
                         </div>
                     </div>
                     <div className={styles.infoBlocks}>
@@ -160,6 +163,57 @@ const Home: NextPage = () => {
                             <a href={'/idk'} className={styles.link}>
                                 See our public network visualisation map here
                             </a>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.section5}>
+                    <div>
+                        <h3>Technology Solutions</h3>
+                        <h6>
+                            We help companies reduce cost and maximise support for business acceleration by modernising IT infrastructure and
+                            applications. Our services cover all areas of your business.
+                        </h6>
+                        <a href={'/idk'} className={styles.link}>
+                            Learn more
+                        </a>
+                    </div>
+                    <div>
+                        <h3>Application Development</h3>
+                        <h6>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed odio viverra adipiscing.Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Faucibus sed odio viverra adipiscing.
+                        </h6>
+                        <a href={'/idk'} className={styles.link}>
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div style={{ position: 'relative', overflowX: 'hidden' }}>
+                    <Image src={PinkBars} layout={'responsive'} />
+                    <div className={styles.products}>
+                        <h3>Products</h3>
+                        <div>
+                            <div>
+                                <h2>Lorem</h2>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                                <a className={styles.link} href={'/idk'}>
+                                    Learn more
+                                </a>
+                            </div>
+                            <div>
+                                <h2>Ipsum</h2>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                                <a className={styles.link} href={'/idk'}>
+                                    Learn more
+                                </a>
+                            </div>
+                            <div>
+                                <h2>Dolor</h2>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                                <a className={styles.link} href={'/idk'}>
+                                    Learn more
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
