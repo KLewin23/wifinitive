@@ -1,9 +1,12 @@
 import React, { useRef, useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import DecahedraCloud from '../public/DecahedraCloud.svg';
+import ImplementingSaas from '../public/ImplementingSaas.svg';
 
 const Home: NextPage = () => {
     const [hoveredTile, setHoveredTile] = useState<null | number>(null);
@@ -23,7 +26,9 @@ const Home: NextPage = () => {
                         <div onMouseEnter={() => setHoveredTile(0)} onMouseLeave={() => setHoveredTile(null)}>
                             <h2>Decahedra</h2>
                             <p>Delivering Scalable and Secure Data Centre Solutions Across Europe, Asia and Africa.</p>
-                            <a href={'/decahedra'}>Learn more</a>
+                            <a className={styles.link} href={'/decahedra'}>
+                                Learn more
+                            </a>
                         </div>
                         <div className={styles.slide1} style={{ transform: hoveredTile === 0 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` }} />
                     </div>
@@ -31,7 +36,9 @@ const Home: NextPage = () => {
                         <div onMouseEnter={() => setHoveredTile(1)} onMouseLeave={() => setHoveredTile(null)}>
                             <h2>Consultancy</h2>
                             <p>Utilise our world-class team for your next project and benefit from lower costs and full support.</p>
-                            <a href={'/consultancy'}>Learn more</a>
+                            <a className={styles.link} href={'/consultancy'}>
+                                Learn more
+                            </a>
                         </div>
                         <div className={styles.slide2} style={{ transform: hoveredTile === 1 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` }} />
                     </div>
@@ -39,7 +46,9 @@ const Home: NextPage = () => {
                         <div onMouseEnter={() => setHoveredTile(2)} onMouseLeave={() => setHoveredTile(null)}>
                             <h2>IT Management</h2>
                             <p>On Premises or Remote IT Contracting for your platforms and services.</p>
-                            <a href={'/it-management'}>Learn more</a>
+                            <a className={styles.link} href={'/it-management'}>
+                                Learn more
+                            </a>
                         </div>
                         <div className={styles.slide3} style={{ transform: hoveredTile === 2 ? 'rotate(-36deg) scaleX(3.3)' : 'rotate(-36deg)' }} />
                     </div>
@@ -50,7 +59,9 @@ const Home: NextPage = () => {
                                 The Cloud Hosting Platform for Developers. Revolutionary Infrastructure at Competitive Pricing to be your trusted
                                 cloud partner for your future.
                             </p>
-                            <a href={'/decahedra-cloud'}>Learn more</a>
+                            <a className={styles.link} href={'/decahedra-cloud'}>
+                                Learn more
+                            </a>
                         </div>
                         <div className={styles.slide4} style={{ transform: hoveredTile === 3 ? 'rotate(-36deg) scaleX(3.3)' : 'rotate(-36deg)' }} />
                     </div>
@@ -106,6 +117,50 @@ const Home: NextPage = () => {
                             consectetur adipiscing elit. Faucibus sed odio viverra adipiscing.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Faucibus sed odio viverra adipiscing.
                         </h6>
+                    </div>
+                </div>
+                <div className={styles.section4}>
+                    <div className={styles.splitCard}>
+                        <div className={styles.implementingSaas}>
+                            <div>
+                                <h4>Implementing SaaS</h4>
+                                <h6>Our experts will show your how to utilize SaaS by applying the right practises in a cloud-first initiative.</h6>
+                                <a className={styles.link} href={'/decahedra'}>
+                                    Learn more
+                                </a>
+                            </div>
+                            <Image src={ImplementingSaas} />
+                        </div>
+                        <div className={styles.decahedraCloud}>
+                            <div>
+                                <h4>Decahedra Cloud</h4>
+                                <h6>Use our revolutionary cloud platform to accelerate your business goals into reality.</h6>
+                                <a className={styles.link} href={'/decahedra'}>
+                                    Learn more
+                                </a>
+                            </div>
+                            <Image src={DecahedraCloud} />
+                        </div>
+                    </div>
+                    <div className={styles.infoBlocks}>
+                        <div>
+                            <h3>Wifinitive Network Operations</h3>
+                            <h6>
+                                Learn how Wifinitive manages Data Centre and Cloud Networks worldwide ensuring stability, responsiveness and strong
+                                performance.
+                            </h6>
+                        </div>
+                        <div>
+                            <h3>Your NOC, visualised.</h3>
+                            <h6>
+                                Wifinitive NOC Visualisation provides real-time insights into the Wifinitive and Decahedra networks deployed
+                                worldwide. Wifinitive NOC offers detailed insights into destination and origin, protocol details and strong logging
+                                ability.
+                            </h6>
+                            <a href={'/idk'} className={styles.link}>
+                                See our public network visualisation map here
+                            </a>
+                        </div>
                     </div>
                 </div>
             </main>
