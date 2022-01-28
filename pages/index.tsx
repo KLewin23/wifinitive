@@ -33,7 +33,10 @@ const Home: NextPage = () => {
                                 Learn more
                             </a>
                         </div>
-                        <div className={styles.slide1} style={{ transform: hoveredTile === 0 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` }} />
+                        <div
+                            className={styles.slide1}
+                            style={windowWidth >= 850 ? { transform: hoveredTile === 0 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` } : {}}
+                        />
                     </div>
                     <div className={styles.tile}>
                         <div onMouseEnter={() => setHoveredTile(1)} onMouseLeave={() => setHoveredTile(null)}>
@@ -43,7 +46,10 @@ const Home: NextPage = () => {
                                 Learn more
                             </a>
                         </div>
-                        <div className={styles.slide2} style={{ transform: hoveredTile === 1 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` }} />
+                        <div
+                            className={styles.slide2}
+                            style={windowWidth >= 850 ? { transform: hoveredTile === 1 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` } : {}}
+                        />
                     </div>
                     <div className={styles.tile}>
                         <div onMouseEnter={() => setHoveredTile(2)} onMouseLeave={() => setHoveredTile(null)}>
@@ -53,7 +59,10 @@ const Home: NextPage = () => {
                                 Learn more
                             </a>
                         </div>
-                        <div className={styles.slide3} style={{ transform: hoveredTile === 2 ? 'rotate(-36deg) scaleX(3.3)' : 'rotate(-36deg)' }} />
+                        <div
+                            className={styles.slide3}
+                            style={windowWidth >= 850 ? { transform: hoveredTile === 2 ? 'rotate(-36deg) scaleX(3.3)' : 'rotate(-36deg)' } : {}}
+                        />
                     </div>
                     <div className={styles.tile}>
                         <div onMouseEnter={() => setHoveredTile(3)} onMouseLeave={() => setHoveredTile(null)}>
@@ -66,7 +75,10 @@ const Home: NextPage = () => {
                                 Learn more
                             </a>
                         </div>
-                        <div className={styles.slide4} style={{ transform: hoveredTile === 3 ? 'rotate(-36deg) scaleX(3.3)' : 'rotate(-36deg)' }} />
+                        <div
+                            className={styles.slide4}
+                            style={windowWidth >= 850 ? { transform: hoveredTile === 3 ? 'rotate(-36deg) scaleX(3.3)' : 'rotate(-36deg)' } : {}}
+                        />
                     </div>
                 </div>
                 <div className={styles.statsContainer}>
