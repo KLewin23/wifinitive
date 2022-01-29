@@ -27,7 +27,13 @@ const Home: NextPage = () => {
                 <div className={styles.quarterTiles} ref={quarterTiles}>
                     <div className={styles.tile}>
                         <div onMouseEnter={() => setHoveredTile(0)} onMouseLeave={() => setHoveredTile(null)}>
-                            <h2>Decahedra</h2>
+                            <h2
+                                style={{
+                                    background: windowWidth < 850 ? '-webkit-linear-gradient(90deg, #2DE07F -12.69%, #39D3E8 123.38%)' : 'none',
+                                }}
+                            >
+                                Decahedra
+                            </h2>
                             <p>Delivering Scalable and Secure Data Centre Solutions Across Europe, Asia and Africa.</p>
                             <a className={styles.link} href={'/decahedra'}>
                                 Learn more
@@ -35,26 +41,39 @@ const Home: NextPage = () => {
                         </div>
                         <div
                             className={styles.slide1}
-                            style={windowWidth >= 850 ? { transform: hoveredTile === 0 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` } : {}}
+                            style={windowWidth >= 850 ? { transform: hoveredTile === 0 ? `rotate(-36deg) scaleX(2.9)` : `rotate(-36deg)` } : {}}
                         />
                     </div>
                     <div className={styles.tile}>
                         <div onMouseEnter={() => setHoveredTile(1)} onMouseLeave={() => setHoveredTile(null)}>
-                            <h2>Consultancy</h2>
-                            <p>Utilise our world-class team for your next project and benefit from lower costs and full support.</p>
+                            <h2
+                                style={{
+                                    background: windowWidth < 850 ? '-webkit-linear-gradient(269.39deg, #FF62D3 -5.52%, #FFAD4D 115.58%)' : 'none',
+                                }}
+                            >
+                                IT Management
+                            </h2>
+                            <p>On Premises or Remote IT Contracting for your platforms and services.</p>
+
                             <a className={styles.link} href={'/consultancy'}>
                                 Learn more
                             </a>
                         </div>
                         <div
                             className={styles.slide2}
-                            style={windowWidth >= 850 ? { transform: hoveredTile === 1 ? `rotate(-36deg) scaleX(2.7)` : `rotate(-36deg)` } : {}}
+                            style={windowWidth >= 850 ? { transform: hoveredTile === 1 ? `rotate(-36deg) scaleX(2.9)` : `rotate(-36deg)` } : {}}
                         />
                     </div>
                     <div className={styles.tile}>
                         <div onMouseEnter={() => setHoveredTile(2)} onMouseLeave={() => setHoveredTile(null)}>
-                            <h2>IT Management</h2>
-                            <p>On Premises or Remote IT Contracting for your platforms and services.</p>
+                            <h2
+                                style={{
+                                    background: windowWidth < 850 ? '-webkit-linear-gradient(269.81deg, #3649FC -14.41%, #B235FF 100.56%)' : 'none',
+                                }}
+                            >
+                                Consultancy
+                            </h2>
+                            <p>Utilise our world-class team for your next project and benefit from lower costs and full support.</p>
                             <a className={styles.link} href={'/it-management'}>
                                 Learn more
                             </a>
@@ -66,7 +85,13 @@ const Home: NextPage = () => {
                     </div>
                     <div className={styles.tile}>
                         <div onMouseEnter={() => setHoveredTile(3)} onMouseLeave={() => setHoveredTile(null)}>
-                            <h2>Decahedra Cloud</h2>
+                            <h2
+                                style={{
+                                    background: windowWidth < 850 ? '-webkit-linear-gradient(270.12deg, #0FD4FF -9.68%, #2069D7 100.62%)' : 'none',
+                                }}
+                            >
+                                Decahedra Cloud
+                            </h2>
                             <p>
                                 The Cloud Hosting Platform for Developers. Revolutionary Infrastructure at Competitive Pricing to be your trusted
                                 cloud partner for your future.

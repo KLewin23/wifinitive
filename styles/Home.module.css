@@ -14,8 +14,10 @@
     width: 100%;
 }
 
-.tile > :first-child {
-    cursor: pointer;
+.tile h2 {
+    font-size: 2.1875rem;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
 }
 
 .tile :is(h2, p, a) {
@@ -266,21 +268,29 @@
         grid-row-gap: 22vh;
     }
     .tile :is(.slide1, .slide2) {
-        top: calc(-8rem - 100%);
-        left: 45%;
+        top: calc(-12rem - 100%);
+        left: 55%;
         width: 500px;
         min-height: 300px;
         height: calc(140% + 40px);
     }
-
+    .tile > :first-child {
+        cursor: pointer;
+    }
     .tile :is(.slide3, .slide4) {
         top: unset;
         right: unset;
         left: -100%;
-        bottom: calc(-8rem - 100%);
+        bottom: calc(-6rem - 100%);
         width: 500px;
         min-height: 300px;
-        height: calc(140% + 40px);
+        height: calc(140%);
+    }
+    .tile h2 {
+        color: white;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+        font-size: 3rem;
     }
     .tile {
         margin: 0 auto;
