@@ -19,7 +19,8 @@
     z-index: -10;
 }
 
-.videoSection {
+.serviceSection {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding-block: 2em;
@@ -27,12 +28,20 @@
     background-color: #242424;
 }
 
-.videoSection span {
+.serviceSection > div span {
     background: linear-gradient(269.05deg, #d66ba5 -19.04%, #9894e0 43.61%, #46aec5 107.58%);
     padding: 0 5px;
 }
 
-.videoSection > :first-child {
+.serviceSection > div {
+    z-index: 10;
+}
+
+.serviceSection > span {
+    z-index: 0;
+}
+
+.serviceSection > :first-child {
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -42,12 +51,22 @@
 }
 
 .digitalServices {
-    padding-block: 2em;
+    position: relative;
+    padding-block: 2em;overflow: hidden;
 }
 
 .digitalServices > h5 {
     margin-block: 2em;
     width: 60%;
+}
+
+.imageContainer {
+    position: absolute;
+    right: -230px;
+    top: -150px;
+    z-index: -10;
+    transform: rotate(75deg) scaleY(-1);
+    width: max-content;
 }
 
 @media only screen and (min-width: 850px) {
@@ -58,16 +77,22 @@
     .header {
         padding-block: 13em;
     }
-    .videoSection,
+    .serviceSection,
     .digitalServices {
         padding-block: 3em;
     }
-    .videoSection > :last-child {
+    .serviceSection > :last-child {
         width: 50%;
         height: 257px;
     }
-    .videoSection > :last-child > svg {
+    .serviceSection > :last-child > svg {
         display: block;
         float: right;
+    }
+    .imageContainer {
+        position: absolute;
+        right: -40px;
+        top: -30px;
+        transform: none;
     }
 }

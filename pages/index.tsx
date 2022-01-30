@@ -1,14 +1,10 @@
-import React, { useRef, useState } from 'react';
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import type { NextPage } from 'next';
+import React, { useRef, useState } from 'react';
 import styles from '../styles/Home.module.css';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import useWindowWidth from '../components/useWindowWidth';
-import DecahedraCloud from '../public/DecahedraCloud.svg';
-import ImplementingSaas from '../public/ImplementingSaas.svg';
-import PinkBars from '../public/pinkBars.svg';
+import { Footer, useWindowWidth, Navbar } from '../components';
+import { DecahedraCloud, ImplementingSaas, PinkBars } from '../public';
 
 const Home: NextPage = () => {
     const [hoveredTile, setHoveredTile] = useState<null | number>(null);
