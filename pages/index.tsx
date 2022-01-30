@@ -5,10 +5,10 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import useWindowWidth from '../components/useWindowWidth';
 import DecahedraCloud from '../public/DecahedraCloud.svg';
 import ImplementingSaas from '../public/ImplementingSaas.svg';
 import PinkBars from '../public/pinkBars.svg';
-import useWindowWidth from '../components/useWindowWidth';
 
 const Home: NextPage = () => {
     const [hoveredTile, setHoveredTile] = useState<null | number>(null);
@@ -35,9 +35,7 @@ const Home: NextPage = () => {
                                 Decahedra
                             </h2>
                             <p>Delivering Scalable and Secure Data Centre Solutions Across Europe, Asia and Africa.</p>
-                            <a className={styles.link} href={'/decahedra'}>
-                                Learn more
-                            </a>
+                            <a href={'/decahedra'}>Learn more</a>
                         </div>
                         <div
                             className={styles.slide1}
@@ -55,9 +53,7 @@ const Home: NextPage = () => {
                             </h2>
                             <p>On Premises or Remote IT Contracting for your platforms and services.</p>
 
-                            <a className={styles.link} href={'/consultancy'}>
-                                Learn more
-                            </a>
+                            <a href={'/consultancy'}>Learn more</a>
                         </div>
                         <div
                             className={styles.slide2}
@@ -74,9 +70,7 @@ const Home: NextPage = () => {
                                 Consultancy
                             </h2>
                             <p>Utilise our world-class team for your next project and benefit from lower costs and full support.</p>
-                            <a className={styles.link} href={'/it-management'}>
-                                Learn more
-                            </a>
+                            <a href={'/it-management'}>Learn more</a>
                         </div>
                         <div
                             className={styles.slide3}
@@ -96,9 +90,7 @@ const Home: NextPage = () => {
                                 The Cloud Hosting Platform for Developers. Revolutionary Infrastructure at Competitive Pricing to be your trusted
                                 cloud partner for your future.
                             </p>
-                            <a className={styles.link} href={'/decahedra-cloud'}>
-                                Learn more
-                            </a>
+                            <a href={'/decahedra-cloud'}>Learn more</a>
                         </div>
                         <div
                             className={styles.slide4}
@@ -165,9 +157,7 @@ const Home: NextPage = () => {
                             <div>
                                 <h4>Implementing SaaS</h4>
                                 <h6>Our experts will show your how to utilize SaaS by applying the right practises in a cloud-first initiative.</h6>
-                                <a className={styles.link} href={'/decahedra'}>
-                                    Learn more
-                                </a>
+                                <a href={'/decahedra'}>Learn more</a>
                             </div>
                             {windowWidth > 350 ? <Image src={ImplementingSaas} /> : null}
                         </div>
@@ -175,9 +165,7 @@ const Home: NextPage = () => {
                             <div>
                                 <h4>Decahedra Cloud</h4>
                                 <h6>Use our revolutionary cloud platform to accelerate your business goals into reality.</h6>
-                                <a className={styles.link} href={'/decahedra'}>
-                                    Learn more
-                                </a>
+                                <a href={'/decahedra'}>Learn more</a>
                             </div>
                             {windowWidth > 350 ? <Image src={DecahedraCloud} /> : null}
                         </div>
@@ -197,9 +185,7 @@ const Home: NextPage = () => {
                                 worldwide. Wifinitive NOC offers detailed insights into destination and origin, protocol details and strong logging
                                 ability.
                             </h6>
-                            <a href={'/idk'} className={styles.link}>
-                                See our public network visualisation map here
-                            </a>
+                            <a href={'/idk'}>See our public network visualisation map here</a>
                         </div>
                     </div>
                 </div>
@@ -210,9 +196,7 @@ const Home: NextPage = () => {
                             We help companies reduce cost and maximise support for business acceleration by modernising IT infrastructure and
                             applications. Our services cover all areas of your business.
                         </h6>
-                        <a href={'/idk'} className={styles.link}>
-                            Learn more
-                        </a>
+                        <a href={'/idk'}>Learn more</a>
                     </div>
                     <div>
                         <h3>Application Development</h3>
@@ -220,9 +204,7 @@ const Home: NextPage = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed odio viverra adipiscing.Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Faucibus sed odio viverra adipiscing.
                         </h6>
-                        <a href={'/idk'} className={styles.link}>
-                            Learn more
-                        </a>
+                        <a href={'/idk'}>Learn more</a>
                     </div>
                 </div>
                 <div style={{ position: 'relative', overflowX: 'hidden' }}>
@@ -233,23 +215,17 @@ const Home: NextPage = () => {
                             <div>
                                 <h2>Lorem</h2>
                                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                                <a className={styles.link} href={'/idk'}>
-                                    Learn more
-                                </a>
+                                <a href={'/idk'}>Learn more</a>
                             </div>
                             <div>
                                 <h2>Ipsum</h2>
                                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                                <a className={styles.link} href={'/idk'}>
-                                    Learn more
-                                </a>
+                                <a href={'/idk'}>Learn more</a>
                             </div>
                             <div>
                                 <h2>Dolor</h2>
                                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                                <a className={styles.link} href={'/idk'}>
-                                    Learn more
-                                </a>
+                                <a href={'/idk'}>Learn more</a>
                             </div>
                         </div>
                     </div>

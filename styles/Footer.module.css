@@ -22,14 +22,10 @@
     gap: 2em;
 }
 
-.section2 > div > a > h4 {
-    width: fit-content;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom-color 0.3s linear;
-}
-
-.section2 > div > a > h4:hover {
-    border-bottom: 1px solid currentColor;
+.section2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
 }
 
 .title {

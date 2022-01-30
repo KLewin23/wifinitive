@@ -31,17 +31,20 @@ const Navbar = ({ mode }: { mode: 'light' | 'dark' }): JSX.Element => {
         <div
             className={styles.navbar}
             style={{
+                color: mode === 'light' ? 'black' : 'white',
                 borderBottom: dropdownOpen ? 'solid 1px white' : 'solid 1px transparent',
                 backgroundColor: mode === 'light' ? 'white' : '#242424',
             }}
         >
-            <Logo mode={mode === 'light' ? 'dark' : 'light'} />
+            <a href={'/'}>
+                <Logo mode={mode === 'light' ? 'dark' : 'light'} />
+            </a>
             {windowWidth > 850 ? (
                 <Links direction={'row'} />
             ) : (
                 <button
                     type={'button'}
-                    className={`${styles.navIcon} ${dropdownOpen ? styles.open : ''}`}
+                    className={`${styles.navIcon} ${dropdownOpen ? styles.open : ''} ${mode === 'light' ? styles.dark : ''}`}
                     onClick={() => {
                         document.body.style.overflowY = !dropdownOpen ? 'hidden' : 'unset';
                         document.body.style.height = !dropdownOpen ? '100vh' : 'unset';
@@ -56,7 +59,14 @@ const Navbar = ({ mode }: { mode: 'light' | 'dark' }): JSX.Element => {
                     <span />
                 </button>
             )}
-            <div className={styles.dropdown} style={{ height: dropdownOpen ? '100vh' : '0' }}>
+            <div
+                className={styles.dropdown}
+                style={{
+                    height: dropdownOpen ? '100vh' : '0',
+                    color: mode === 'light' ? '#242424' : 'white',
+                    backgroundColor: mode === 'light' ? 'white' : '#242424',
+                }}
+            >
                 <Links direction={'column'} />
             </div>
         </div>

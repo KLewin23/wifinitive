@@ -1,0 +1,73 @@
+.main > div {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header {
+    position: relative;
+    height: 544px;
+    padding-block: 12em;
+    z-index: 10;
+}
+
+.header > h5 {
+    width: 280px;
+}
+
+.headerImage {
+    position: relative;
+    z-index: -10;
+}
+
+.videoSection {
+    display: flex;
+    flex-direction: row;
+    padding-block: 2em;
+    color: white;
+    background-color: #242424;
+}
+
+.videoSection span {
+    background: linear-gradient(269.05deg, #d66ba5 -19.04%, #9894e0 43.61%, #46aec5 107.58%);
+    padding: 0 5px;
+}
+
+.videoSection > :first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    min-width: 50%;
+    flex: 1;
+    margin-block: 1em;
+}
+
+.digitalServices {
+    padding-block: 2em;
+}
+
+.digitalServices > h5 {
+    margin-block: 2em;
+    width: 60%;
+}
+
+@media only screen and (min-width: 850px) {
+    .main > div {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .header {
+        padding-block: 13em;
+    }
+    .videoSection,
+    .digitalServices {
+        padding-block: 3em;
+    }
+    .videoSection > :last-child {
+        width: 50%;
+        height: 257px;
+    }
+    .videoSection > :last-child > svg {
+        display: block;
+        float: right;
+    }
+}

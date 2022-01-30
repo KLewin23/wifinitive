@@ -30,18 +30,6 @@
     max-width: 325px;
 }
 
-.link {
-    font-family: Montserrat, sans-serif;
-    font-size: 0.9375rem;
-    border-bottom: solid 1px transparent;
-    transition: all 0.4s ease-in-out;
-    width: fit-content;
-}
-
-.link:hover {
-    border-bottom: solid 1px currentColor;
-}
-
 .tile :is(.slide1, .slide2, .slide3, .slide4) {
     position: absolute;
     z-index: 10;
@@ -196,13 +184,13 @@
 .infoBlocks > :last-child {
     display: flex;
     flex-direction: column;
-    justify-self: start;
+    justify-self: flex-flex-start;
     width: fit-content;
     text-align: left;
 }
 
 .infoBlocks > :last-child > a {
-    align-self: start;
+    align-self: flex-flex-start;
     font-weight: bold;
 }
 
@@ -258,7 +246,7 @@
         text-align: initial;
     }
     .products > div > div {
-        align-items: start;
+        align-items: flex-start;
     }
 }
 @media only screen and (min-width: 850px) {
@@ -273,6 +261,7 @@
         width: 500px;
         min-height: 300px;
         height: calc(140% + 40px);
+        transform: rotate(-36deg);
     }
     .tile > :first-child {
         cursor: pointer;
@@ -282,6 +271,7 @@
         right: unset;
         left: -100%;
         bottom: calc(-6rem - 100%);
+        transform: rotate(-36deg);
         width: 500px;
         min-height: 300px;
         height: calc(140%);
@@ -349,5 +339,12 @@
         padding: 5em 10%;
         grid-gap: 20em;
         grid-template-columns: 1fr 1fr;
+    }
+    .section5 > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5em;
     }
 }
