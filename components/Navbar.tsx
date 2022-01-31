@@ -4,7 +4,7 @@ import styles from '../styles/Components.module.css';
 import useWindowWidth from './useWindowWidth';
 
 const Links = ({ direction }: { direction: 'row' | 'column' }) => (
-    <div className={styles.links} style={{ flexDirection: direction }}>
+    <nav className={styles.links} style={{ flexDirection: direction }}>
         <a href={'/'}>
             <h5>Home</h5>
         </a>
@@ -20,7 +20,7 @@ const Links = ({ direction }: { direction: 'row' | 'column' }) => (
         <a href={'/about'}>
             <h5>About</h5>
         </a>
-    </div>
+    </nav>
 );
 
 const Navbar = ({ mode }: { mode: 'light' | 'dark' }): JSX.Element => {
@@ -32,8 +32,8 @@ const Navbar = ({ mode }: { mode: 'light' | 'dark' }): JSX.Element => {
             className={styles.navbar}
             style={{
                 color: mode === 'light' ? 'black' : 'white',
-                borderBottom: dropdownOpen ? 'solid 1px white' : 'solid 1px transparent',
-                backgroundColor: mode === 'light' ? 'white' : '#242424',
+                borderBottom: dropdownOpen ? 'solid 1px #F5F5F5' : 'solid 1px transparent',
+                backgroundColor: mode === 'light' ? '#F5F5F5' : '#242424',
             }}
         >
             <a href={'/'}>
@@ -64,7 +64,7 @@ const Navbar = ({ mode }: { mode: 'light' | 'dark' }): JSX.Element => {
                 style={{
                     height: dropdownOpen ? '100vh' : '0',
                     color: mode === 'light' ? '#242424' : 'white',
-                    backgroundColor: mode === 'light' ? 'white' : '#242424',
+                    backgroundColor: mode === 'light' ? '#F5F5F5' : '#242424',
                 }}
             >
                 <Links direction={'column'} />

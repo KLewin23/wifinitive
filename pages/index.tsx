@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 import { Footer, useWindowWidth, Navbar } from '../components';
 import { DecahedraCloud, ImplementingSaas, PinkBars } from '../public';
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
     const [hoveredTile, setHoveredTile] = useState<null | number>(null);
     const quarterTiles = useRef<HTMLDivElement | null>(null);
     const windowWidth = useWindowWidth();
@@ -232,4 +232,4 @@ const Home: NextPage = () => {
     );
 };
 
-export default Home;
+export default Index;
