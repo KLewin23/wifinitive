@@ -14,3 +14,8 @@ export { default as Door } from './Door.svg';
 export { default as Stars } from './Stars.svg';
 export { default as Discuss } from './Discuss.svg';
 export { default as Good } from './Good.svg';
+export { default as CloudServices } from './CloudServices.svg';
+export { default as Chess } from './Chess.svg';
+export { default as Document } from './Document.svg';
+export { default as Upload } from './Upload.svg';
+export { default as CloudEcosystem } from './CloudEcosystem.svg';

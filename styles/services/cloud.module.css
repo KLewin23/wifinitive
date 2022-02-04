@@ -1,0 +1,111 @@
+.main > section,
+.header > div {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header {
+    position: relative;
+    min-height: 544px;
+    overflow: hidden;
+}
+
+.header > span {
+    min-width: 1440px;
+    left: -70%;
+}
+
+.header > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    bottom: 50%;
+    transform: translateY(50%);
+    z-index: 10;
+}
+
+.header > div > h6 {
+    max-width: 250px;
+}
+
+.statements {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-block: 4em;
+}
+
+.statements > .topPart {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 700px;
+}
+
+.topPart span {
+    background: linear-gradient(91.46deg, #2de07f -30.5%, #4ec3dd 133.51%);
+    padding: 0 3px;
+}
+
+.statements > .lowerPart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.lowerPart > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-weight: bold;
+}
+
+.lowerPart h5 {
+    font-weight: bold;
+}
+
+.lowerPart h6 {
+    max-width: 250px;
+    padding-block: 0.5em;
+}
+
+.cloudEcosystem {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-block: 0;
+}
+
+.cloudEcosystem > .text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cloudEcosystem > .brands {
+    height: 10px;
+    flex-grow: 1;
+    width: 50%;
+}
+
+@media only screen and (min-width: 850px) {
+    .main > section,
+    .header > div {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .header > span {
+        left: 0;
+    }
+    .statements > .lowerPart {
+        flex-direction: row;
+    }
+    .lowerPart {
+        align-items: center;
+    }
+}

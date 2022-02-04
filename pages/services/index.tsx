@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import { Navbar, Footer, useWindowWidth } from '../../components';
 import styles from '../../styles/services/index.module.css';
 import { OurServices, DigitalServices, TechnologySolutionsBars } from '../../public';

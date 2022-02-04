@@ -42,7 +42,7 @@ const Index: NextPage = () => {
                         <div onMouseEnter={() => setHoveredTile(1)} onMouseLeave={() => setHoveredTile(null)}>
                             <h2
                                 style={{
-                                    background: windowWidth < 850 ? '-webkit-linear-gradient(269.39deg, #FF62D3 -5.52%, #FFAD4D 115.58%)' : 'none',
+                                    background: windowWidth < 850 ? '-webkit-linear-gradient(269.81deg, #3649FC -14.41%, #B235FF 100.56%)' : 'none',
                                 }}
                             >
                                 IT Management
@@ -60,7 +60,7 @@ const Index: NextPage = () => {
                         <div onMouseEnter={() => setHoveredTile(2)} onMouseLeave={() => setHoveredTile(null)}>
                             <h2
                                 style={{
-                                    background: windowWidth < 850 ? '-webkit-linear-gradient(269.81deg, #3649FC -14.41%, #B235FF 100.56%)' : 'none',
+                                    background: windowWidth < 850 ? '-webkit-linear-gradient(269.39deg, #FF62D3 -5.52%, #FFAD4D 115.58%)' : 'none',
                                 }}
                             >
                                 Consultancy

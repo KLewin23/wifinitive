@@ -6,19 +6,19 @@ import useWindowWidth from './useWindowWidth';
 const Links = ({ direction }: { direction: 'row' | 'column' }) => (
     <nav className={styles.links} style={{ flexDirection: direction }}>
         <a href={'/'}>
-            <h5>Home</h5>
+            <h6>Home</h6>
         </a>
         <a href={'/products'}>
-            <h5>Products</h5>
+            <h6>Products</h6>
         </a>
         <a href={'/services'}>
-            <h5>Services</h5>
+            <h6>Services</h6>
         </a>
         <a href={'/contact'}>
-            <h5>Contact</h5>
+            <h6>Contact</h6>
         </a>
         <a href={'/about'}>
-            <h5>About</h5>
+            <h6>About</h6>
         </a>
     </nav>
 );

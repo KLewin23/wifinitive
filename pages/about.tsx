@@ -18,22 +18,22 @@ const About = (): JSX.Element => {
                 <Navbar mode={'light'} />
                 <section className={styles.header}>
                     <div className={styles.bars}>
-                        <Image src={AboutBars} layout={'fixed'} />
+                        <Image src={AboutBars} priority layout={'fixed'} />
                     </div>
                     <h1>
                         About
                         <br />
                         Us
                     </h1>
-                    <h5>Wifinitive is a dynamic company for technology consultancy and services.</h5>
+                    <h6>Wifinitive is a dynamic company for technology consultancy and services.</h6>
                 </section>
-                <section>
-                    <h6 className={styles.textBlock}>
-                        Wifinitive provides solutions around pre-existing software and solutions while also providing innovative new products and
-                        services. Wifinitive monitors the forefront of new technologies to ensure our service stays ahead of the curve, no matter the
-                        industry, allowing us to be proactive rather than reactive.
-                    </h6>
-                </section>
+
+                <h6 className={styles.textBlock}>
+                    Wifinitive provides solutions around pre-existing software and solutions while also providing innovative new products and
+                    services. Wifinitive monitors the forefront of new technologies to ensure our service stays ahead of the curve, no matter the
+                    industry, allowing us to be proactive rather than reactive.
+                </h6>
+
                 <section className={styles.assocBrands}>
                     <h3>Associated Brands</h3>
                     <div>

@@ -184,13 +184,13 @@
 .infoBlocks > :last-child {
     display: flex;
     flex-direction: column;
-    justify-self: flex-flex-start;
+    justify-self: flex-start;
     width: fit-content;
     text-align: left;
 }
 
 .infoBlocks > :last-child > a {
-    align-self: flex-flex-start;
+    align-self: flex-start;
     font-weight: bold;
 }
 

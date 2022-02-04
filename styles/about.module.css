@@ -1,36 +1,31 @@
-.main > section {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 .header {
     position: relative;
     z-index: 10;
     height: 544px;
     background-color: #f5f5f5;
-    padding-block: 12em;
+    padding-block: 13em;
     overflow: hidden;
 }
 
-.header > h5 {
-    margin-block: 1em;
+.header > h6 {
+    margin-block: 2em;
     max-width: 100%;
 }
 
 .bars {
     position: absolute;
     margin-left: -5%;
-    margin-block: -12em;
+    margin-block: -13em;
     z-index: -10;
 }
 
 .textBlock {
+    padding: 0 5%;
     margin-block: 4em;
-    max-width: 750px;
+    max-width: 1000px;
 }
 
 .assocBrands {
-    padding-block: 4em;
     background-color: #242424;
     color: white;
     text-align: center;
@@ -40,7 +35,7 @@
     display: grid;
     gap: 2em;
     grid-template-columns: 1fr;
-    padding-block: 3em;
+    margin-top: 3em;
 }
 
 .assocBrands > div > div {
@@ -55,7 +50,6 @@
 .itemGrid {
     position: relative;
     background-color: white;
-    padding: 3em 5%;
     width: 100%;
 }
 .grid {
@@ -88,7 +82,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    margin: 4em auto;
+    margin: 3em auto;
     z-index: 10;
     text-align: center;
 }
@@ -121,15 +115,14 @@
 }
 
 @media only screen and (min-width: 850px) {
-    .main > section {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
     .bars {
         margin-left: -10%;
     }
-    .header > h5 {
+    .header > h6 {
         max-width: 250px;
+    }
+    .textBlock {
+        padding: 0 10%;
     }
     .assocBrands {
         text-align: unset;
